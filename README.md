@@ -116,5 +116,3 @@ The visualization follows modern data visualization principles:
 - [FreeCodeCamp](https://www.freecodecamp.org/) for the project requirements and dataset
 - [D3.js Community](https://d3js.org/) for the powerful visualization library
 - [Mike Bostock](https://bost.ocks.org/mike/) for D3.js and treemap examples
-
-# Treemap-Diagram
