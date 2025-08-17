@@ -1,0 +1,199 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #ffffff;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Treemap Container */
+.treemap-container {
+  background: #ffffff;
+  max-width: 1200px;
+  width: 100%;
+}
+
+/* Header Styles */
+.treemap-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Dataset Links */
+.dataset-links {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.dataset-links a {
+  color: #0066cc;
+  text-decoration: none;
+  margin: 0 5px;
+  font-size: 14px;
+}
+
+.dataset-links a:hover {
+  text-decoration: underline;
+}
+
+#title {
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: #000000;
+  margin-bottom: 8px;
+  margin-top: 20px;
+}
+
+#description {
+  font-size: 1rem;
+  color: #000000;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+/* Visualization Wrapper */
+.visualization-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #ffffff;
+}
+
+.treemap-svg {
+  border: 1px solid #ddd;
+  background: #ffffff;
+}
+
+/* Tile Styles */
+.tile {
+  cursor: pointer;
+  stroke: #ffffff;
+  stroke-width: 1px;
+}
+
+.tile:hover {
+  stroke: #000000;
+  stroke-width: 2px;
+}
+
+/* Tooltip Styles */
+.tooltip {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-size: 12px;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  z-index: 1000;
+  max-width: 200px;
+  text-align: left;
+}
+
+.tooltip-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.tooltip-name {
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.tooltip-category,
+.tooltip-value {
+  font-size: 11px;
+}
+
+/* Legend Styles */
+#legend {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  max-width: 800px;
+}
+
+.legend-item-container {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.legend-item {
+  width: 20px;
+  height: 20px;
+  stroke: #000000;
+  stroke-width: 1px;
+}
+
+.legend-text {
+  font-size: 12px;
+  color: #000000;
+}
+
+/* Text in tiles */
+.tile-text {
+  font-size: 10px;
+  fill: #000000;
+  font-weight: normal;
+  pointer-events: none;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .treemap-container {
+    padding: 15px;
+  }
+  
+  #title {
+    font-size: 2rem;
+  }
+  
+  .treemap-svg {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .app {
+    padding: 10px;
+  }
+  
+  #title {
+    font-size: 1.8rem;
+  }
+  
+  #legend {
+    gap: 10px;
+  }
+  
+  .legend-text {
+    font-size: 11px;
+  }
+}
