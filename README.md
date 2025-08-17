@@ -2,6 +2,9 @@
 
 A sophisticated, interactive data visualization built with D3.js that displays movie sales data using a treemap diagram. This project demonstrates advanced data visualization techniques with responsive design and smooth user interactions.
 
+<img width="1920" height="1336" alt="image" src="https://github.com/user-attachments/assets/cc7c3a49-3eef-47d1-8a3c-2a133b94920b" />
+
+
 ## 🎯 Overview
 
 This treemap visualization transforms complex movie sales data into an intuitive, interactive chart where each rectangle's size corresponds to the movie's revenue. Users can explore different movie categories through color-coded tiles and detailed tooltips, making data analysis both engaging and informative.
