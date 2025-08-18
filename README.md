@@ -86,7 +86,7 @@ The visualization follows modern data visualization principles:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/Ayokanmi-Adejola/movie-sales-treemap.git
+   git clone https://github.com/Ayokanmi-Adejola/Treemap-Diagram
    ```
 
 2. Navigate to the project directory:
